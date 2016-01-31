@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Guessing Game</title>
+<title>maut ka Game</title>
 <script>
-var ans="Harry Potter";
+var ans="x-men";
 function check()
 {
   var usrAns=document.getElementById("txt").value;
-  usrAns=usrAns.toLowerCase();
+  usrAns=usrAns.toUpperCase();
   
   ans=ans.toLowerCase();
   
   if(usrAns.match(ans))
   {
-    alert("U got it Right");
+    alert("U got it wrong");
     document.getElementById("msg").innerHTML="Congrats u Won..!";
   } 
   else
   {
-    alert("Oh..! u missed it..!");
+    alert("Oh..! u did it..!");
     document.getElementById("msg").innerHTML="Try again...";
   }
 }
